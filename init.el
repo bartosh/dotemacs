@@ -18,6 +18,7 @@
 (require 'midnight)
 (setq clean-buffer-list-delay-general)
 (require 'ido)
+(setq ido-save-directory-list-file "~/.emacs.d/ido.last")
 (ido-mode t)
 (require 'ffap)
 (require 'uniquify)
