@@ -15,6 +15,8 @@
 (ansi-color-for-comint-mode-on)
 
 ;; useful modes
+(require 'midnight)
+(setq clean-buffer-list-delay-general)
 (require 'ido)
 (ido-mode t)
 (require 'ffap)
