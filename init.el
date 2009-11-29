@@ -24,8 +24,8 @@
 (ido-mode t)
 (require 'ffap)
 (require 'uniquify)
-(require 'recentf)
-(recentf-mode t)
+;;(require 'recentf)
+;;(recentf-mode t)
 
 ;; save sessions
 (setq desktop-path '("~/.emacs.d/"))
