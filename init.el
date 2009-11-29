@@ -9,6 +9,8 @@
 (load "switch-buffer")
 ;; load local options
 (load "general-options")
+;; load keys definitions
+(load "keys")
 
 ;; ansi-color to enable color output in shell
 (load-library "ansi-color")
