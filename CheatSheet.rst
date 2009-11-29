@@ -80,7 +80,7 @@ Query & Replace
 Valid responses in query-replace mode are:
 
 - replace this one, go on to next: SPC
-- replace this one, don?t move: ,
+- replace this one, don’t move: ,
 - skip to next without replacing: DEL
 - replace all remaining matches: !
 - back up to the previous match: ^
@@ -131,7 +131,7 @@ Keyboard Macros
 Multiple Windows
 ----------------
 
-When two commands are shown, the second is for ?other frame.?
+When two commands are shown, the second is for “other frame.”
 
 - delete all other windows: C-x 1
 - split window, above and below: C-x 2    C-x 5 2
