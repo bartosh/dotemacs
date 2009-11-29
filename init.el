@@ -45,9 +45,6 @@
 ;; git
 (require 'git)
 (require 'gitsum)
-(add-to-list 'load-path "~/.emacs.d/git-emacs")
-(require 'git-emacs)
-(require 'git-modeline)
 
 ;; python settings
 (require 'python-mode)
