@@ -202,6 +202,7 @@ rections. If you are a first-time user, type C-h t for a tutorial.
 - show the function a key runs: C-h c
 - describe a function: C-h f
 - get mode-specific information: C-h m
+- show key bindings: C-h b
 
 Error Recovery
 --------------
