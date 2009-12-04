@@ -9,6 +9,7 @@
       indent-tabs-mode nil
       max-lisp-eval-depth 6000
       max-specpdl-size 10000
+      dired-recursive-deletes t
 )
 
 ;; scrolling
