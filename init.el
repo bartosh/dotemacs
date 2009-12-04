@@ -50,6 +50,7 @@
 ;; git
 (require 'git)
 (require 'gitsum)
+(require 'magit)
 
 ;; python settings
 (require 'python-mode)
