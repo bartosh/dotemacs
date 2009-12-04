@@ -77,6 +77,8 @@
         py-smart-indentation t
         whitespace-style '(trailing lines-tail space-after-tab space-before-tab)
         whitespace-line-column 80)
+  (require 'smart-operator)
+  (smart-operator-mode-on)
   (require 'imenu)
   (require 'linum)
   ;;(linum-mode t)
