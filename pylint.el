@@ -10,9 +10,9 @@
 	   (command (concat "pylint --output-format=parseable \"" file "\"")))
       (save-some-buffers (not compilation-ask-about-save) nil) ; save  files.
       (compile-internal command "No more errors or warnings" "pylint")))
-  (local-set-key [f1] 'pylint)
-  (local-set-key [f2] 'previous-error)
-  (local-set-key [f3] 'next-error)
+  ;(local-set-key [f1] 'pylint)
+  ;(local-set-key [f2] 'previous-error)
+  ;(local-set-key [f3] 'next-error)
 
   (define-key
     py-mode-map

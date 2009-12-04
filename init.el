@@ -115,6 +115,8 @@
 
 ;;   (define-key py-mode-map "\t" 'my-complete)
   
+  ;;pylint
+  (load-library "pylint")
   ;;ipython
   (require 'ipython)
   (setq py-python-command-args '("-colors" "LightBG"))
