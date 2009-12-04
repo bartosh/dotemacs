@@ -119,7 +119,7 @@
   (load-library "pylint")
   ;;ipython
   (require 'ipython)
-  (setq py-python-command-args '("-colors" "LightBG"))
+  (setq py-python-command-args '("-colors" "Linux"))
   ;;pdb
   ;;(setq pdb-path '/usr/lib/python2.5/pdb.py
   ;;	gud-pdb-command-name (symbol-name pdb-path))
