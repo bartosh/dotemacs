@@ -61,8 +61,7 @@
         py-indent-offset 4
         indent-tabs-mode nil
         py-smart-indentation t
-        whitespace-style '(tabs spaces trailing lines-tail newline 
-            space-after-tab space-before-tab)
+        whitespace-style '(trailing lines-tail space-after-tab space-before-tab)
         whitespace-line-column 80)
   (require 'imenu)
   (require 'linum)
