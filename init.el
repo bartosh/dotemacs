@@ -50,9 +50,23 @@
 ;; git
 (require 'git)
 (require 'gitsum)
+(require 'magit)
 
 ;; python settings
 (require 'python-mode)
+
+;; check python code with flymake+pylint
+(when (load "flymake" t)
+  (defun flymake-pylint-init ()
+    (let* ((temp-file (flymake-init-create-temp-buffer-copy
+                       'flymake-create-temp-inplace))
+           (local-file (file-relative-name
+                        temp-file
+                        (file-name-directory buffer-file-name))))
+      (list "epylint" (list local-file))))
+
+  (add-to-list 'flymake-allowed-file-name-masks
+               '("\\.py\\'" flymake-pylint-init)))
 
 (defun my-python-hook ()
   (require 'whitespace)
@@ -63,11 +77,14 @@
         py-smart-indentation t
         whitespace-style '(trailing lines-tail space-after-tab space-before-tab)
         whitespace-line-column 80)
+  (require 'smart-operator)
+  (smart-operator-mode-on)
   (require 'imenu)
   (require 'linum)
   ;;(linum-mode t)
   (transient-mark-mode t)
   (require 'pycomplete)
+  (flymake-mode)
 
   ;; rope
   (require 'pymacs)
@@ -98,9 +115,11 @@
 
 ;;   (define-key py-mode-map "\t" 'my-complete)
   
+  ;;pylint
+  (load-library "pylint")
   ;;ipython
   (require 'ipython)
-  (setq py-python-command-args '("--colors" "Linux"))
+  (setq py-python-command-args '("-colors" "Linux"))
   ;;pdb
   ;;(setq pdb-path '/usr/lib/python2.5/pdb.py
   ;;	gud-pdb-command-name (symbol-name pdb-path))
