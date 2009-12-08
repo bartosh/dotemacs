@@ -10,6 +10,7 @@
       max-lisp-eval-depth 6000
       max-specpdl-size 10000
       dired-recursive-deletes t
+      x-select-enable-clipboard t
 )
 
 ;; scrolling
