@@ -99,8 +99,8 @@
 ;;   (define-key py-mode-map "\t" 'my-complete)
   
   ;;ipython
-  ;;(require 'ipython)
-  ;;(setq py-python-command-args '("-colors" "LightBG"))
+  (require 'ipython)
+  (setq py-python-command-args '("--colors" "Linux"))
   ;;pdb
   ;;(setq pdb-path '/usr/lib/python2.5/pdb.py
   ;;	gud-pdb-command-name (symbol-name pdb-path))
