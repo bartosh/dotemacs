@@ -52,6 +52,14 @@
 (require 'gitsum)
 (require 'magit)
 
+;; TAGS
+(defun create-tags (dir-name)
+  "Create tags file."
+  (interactive "DDirectory: ")
+  (shell-command
+   (format "ctags-exuberant -f %s/TAGS -e -R %s" dir-name dir-name))
+  )
+
 ;; python settings
 (require 'python-mode)
 
