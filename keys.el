@@ -11,7 +11,10 @@
 ;; examples
 ;;(global-set-key [(ctrl f2)] 'save-buffer)
 ;;(global-set-key [(s f2)] 'dired) ;; windows key + F2
-;;(global-set-key [(shift f2)] 'ibuffer)
+
+(global-set-key [(shift f2)] 'ibuffer)
+
+
 
 ;; Unassigned simple key combinations
 ;; [(ctrl f1)] - [(ctrl f12)]
