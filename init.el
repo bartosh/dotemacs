@@ -98,9 +98,9 @@
   (flymake-mode)
 
   ;; rope
-  (require 'pymacs)
-  ;;(pymacs-load "ropemacs" "rope-")
-  ;;(setq ropemacs-enable-autoimport t)
+;;  (require 'pymacs)
+;;  (pymacs-load "ropemacs" "rope-")
+;;  (setq ropemacs-enable-autoimport t)
 
 ;;   (require 'auto-complete-config)
 ;;   (ac-ropemacs-initialize)
