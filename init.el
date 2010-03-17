@@ -7,10 +7,13 @@
 (add-to-list 'load-path "~/.emacs.d/")
 ;; switch buffers by shift + arrow
 (load "switch-buffer")
+;; shift region by Meta + Shift + arrow
+(load "shift-region")
 ;; load local options
 (load "general-options")
 ;; load keys definitions
 (load "keys")
+
 
 ;; ansi-color to enable color output in shell
 (load-library "ansi-color")
