@@ -9,6 +9,8 @@
 (load "switch-buffer")
 ;; shift region by Meta + Shift + arrow
 (load "shift-region")
+;; swap 2 windows by C-s
+(load "swap-windows")
 ;; load local options
 (load "general-options")
 ;; load keys definitions
