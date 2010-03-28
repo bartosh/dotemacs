@@ -80,14 +80,14 @@
                '("\\.py\\'" flymake-pylint-init)))
 
 (defun my-python-hook ()
-  (require 'whitespace)
-  (whitespace-mode t)
   (setq tab-width 4
         py-indent-offset 4
         indent-tabs-mode nil
         py-smart-indentation t
         whitespace-style '(trailing lines-tail space-after-tab space-before-tab)
         whitespace-line-column 80)
+  (require 'whitespace)
+  (whitespace-mode t)
   (require 'smart-operator)
   (smart-operator-mode-on)
   (require 'imenu)
