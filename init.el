@@ -69,7 +69,7 @@
 (load "python-settings")
 
 ;; My Erlang settings
-(load "erlang-settings")
+;;(load "erlang-settings")
 
 ;; set color theme
 (require 'color-theme)
