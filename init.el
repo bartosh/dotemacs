@@ -74,6 +74,12 @@
 ;; set color theme
 (require 'color-theme)
 ;;(setq color-theme-is-global t)
-(require 'color-theme-tango)
-(color-theme-tango)
-
+;; Set different themes for X and nox modes
+(if window-system
+    (progn
+      (require 'color-theme-tango)
+      (color-theme-tango))
+  (eval-after-load "color-theme"
+    '(progn
+       (color-theme-initialize)
+       (color-theme-billw))))
