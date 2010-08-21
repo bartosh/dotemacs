@@ -71,6 +71,12 @@
 ;; My Erlang settings
 ;;(load "erlang-settings")
 
+;; My C settings
+(load "c-settings")
+
+;; google maps
+(require 'google-maps)
+
 ;; set color theme
 (require 'color-theme)
 ;;(setq color-theme-is-global t)
