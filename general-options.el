@@ -31,11 +31,18 @@
       font-lock-mode t
       column-number-mode t
       line-number-mode t
-      mouse-wheel-mode t
       inhibit-startup-message t
       display-time-24hr-format t
       display-time-day-and-date t
       frame-title-format "%b: %f")
+
+(mouse-wheel-mode 1)
+;;(bar-cursor-mode nil)
+
+;;(set-scroll-bar-mode 'right)
+(scroll-bar-mode nil)
+;;(menu-bar-mode 0)
+(tool-bar-mode 0)
 
 ;; bell
 (setq visible-bell 1
