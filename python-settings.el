@@ -65,6 +65,7 @@
   ;;ipython
   (require 'ipython)
   (setq py-python-command-args '("-colors" "Linux"))
+  ;;(setq py-python-command-args '("-pylab" "-colors" "LightGreen"))
   ;;pdb
   ;;(setq pdb-path '/usr/lib/python2.5/pdb.py
   ;;	gud-pdb-command-name (symbol-name pdb-path))

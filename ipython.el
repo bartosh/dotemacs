@@ -311,9 +311,10 @@ gets converted to:
         (replace-match "" t nil)))))
 
 (defvar ipython-completion-command-string
-  "print ';'.join(__IP.Completer.all_completions('%s')) #PYTHON-MODE SILENT\n"
+  ;;"print ';'.join(__IP.Completer.all_completions('%s')) #PYTHON-MODE SILENT\n"
+  "print(';'.join(__IP.Completer.all_completions('%s')))\n"
   "The string send to ipython to query for all possible completions")
-
+   
 
 ;; xemacs doesn't have `comint-preoutput-filter-functions' so we'll try the
 ;; following wonderful hack to work around this case
@@ -359,6 +360,7 @@ in the current *Python* session."
         (setq completion (try-completion pattern completion-table))
         (cond ((eq completion t))
               ((null completion)
+	       ;;(message "completion: \"%s\"" (format ipython-completion-command-string pattern))
                (message "Can't find completion for \"%s\"" pattern)
                (ding))
               ((not (string= pattern completion))
