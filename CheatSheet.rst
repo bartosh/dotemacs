@@ -165,7 +165,6 @@ Formatting
 - set fill column: C-x f
 - set prefix each line starts with: C-x .
 - set face: M-g
-- narrow-to-defun: C-x n d
 
 Case Change
 -----------
