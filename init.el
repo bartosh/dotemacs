@@ -65,6 +65,11 @@
    (format "ctags-exuberant -f %s/TAGS -e -R %s" dir-name dir-name))
   )
 
+;;rpm spec
+(autoload 'rpm-spec-mode "rpm-spec-mode.el" "RPM spec mode." t)
+(setq auto-mode-alist (append '(("\\.spec" . rpm-spec-mode))
+			      auto-mode-alist))
+
 ;; My Python settings
 (load "python-settings")
 
