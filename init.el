@@ -75,6 +75,7 @@
 (load "c-settings")
 
 ;; set color theme
+(add-to-list 'load-path "~/.emacs.d/color-theme")
 (require 'color-theme)
 ;;(setq color-theme-is-global t)
 ;; Set different themes for X and nox modes
